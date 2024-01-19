@@ -1,0 +1,26 @@
+{
+    "name": "dev-apctl",
+    "description": "apctl command line tool auth0 application definition",
+    "oidc_conformant": true,
+    "refresh_token": {
+        "expiration_type": "expiring",
+        "leeway": 0,
+        "token_lifetime": 604800,
+        "infinite_token_lifetime": false,
+        "idle_token_lifetime": 172800,
+        "infinite_idle_token_lifetime": false,
+        "rotation_type": "non-rotating"
+    },
+    "jwt_configuration": {
+        "alg": "RS256",
+        "lifetime_in_seconds": 86400
+    },
+    "token_endpoint_auth_method": "none",
+    "app_type": "native",
+    "grant_types": [
+        "implicit",
+        "authorization_code",
+        "refresh_token",
+        "urn:ietf:params:oauth:grant-type:device_code"
+    ]
+}
